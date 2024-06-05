@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExemploDevOps", "ExemploDevOps\ExemploDevOps.csproj", "{3C5AD1EA-723A-4AAA-A7E6-DC4425390AFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C5AD1EA-723A-4AAA-A7E6-DC4425390AFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C5AD1EA-723A-4AAA-A7E6-DC4425390AFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C5AD1EA-723A-4AAA-A7E6-DC4425390AFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C5AD1EA-723A-4AAA-A7E6-DC4425390AFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
