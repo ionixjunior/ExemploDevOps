@@ -1,0 +1,28 @@
+trigger:
+- main
+
+pool:
+  vmImage: 'macos-14'
+
+# variables:
+#   buildConfiguration: 'Release'
+#   outputDirectory: '$(build.binariesDirectory)/$(buildConfiguration)'
+
+steps:
+- task: CmdLine@2
+  displayName: 'Instalar workaload MAUI'
+  inputs:
+    script: |
+      dotnet workload install maui
+
+- task: CmdLine@2
+  displayName: 'Restaurar pacotes'
+  inputs:
+    script: |
+      dotnet restore *.sln 
+
+- task: CmdLine@2
+  displayName: 'Compilar iOS'
+  inputs:
+    script: |
+      dotnet build -f net8.0-ios
