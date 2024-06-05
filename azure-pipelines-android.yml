@@ -16,12 +16,12 @@ variables:
 steps:
 - task: NuGetToolInstaller@1
 
-- task: NuGetCommand@2
+- task: CmdLine@2
   inputs:
-    restoreSolution: '**/*.sln'
+    script: |
+      dotnet restore *.sln 
 
-- task: XamarinAndroid@1
+- task: CmdLine@2
   inputs:
-    projectFile: '**/*.csproj'
-    outputDirectory: '$(outputDirectory)'
-    configuration: '$(buildConfiguration)'
+    script: |
+      dotnet build -f net8.0-android
