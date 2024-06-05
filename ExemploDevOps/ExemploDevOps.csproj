@@ -62,4 +62,10 @@
         <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <Content Include="..\azure-pipelines-android.yml">
+        <Link>azure-pipelines-android.yml</Link>
+      </Content>
+    </ItemGroup>
+
 </Project>

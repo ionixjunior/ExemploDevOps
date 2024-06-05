@@ -17,11 +17,19 @@ steps:
 - task: NuGetToolInstaller@1
 
 - task: CmdLine@2
+  displayName: 'Instalar workaload MAUI Android'
+  inputs:
+    script: |
+      dotnet workload install maui-android
+
+- task: CmdLine@2
+  displayName: 'Restaurar pacotes'
   inputs:
     script: |
       dotnet restore *.sln 
 
 - task: CmdLine@2
+  displayName: 'Compilar Android'
   inputs:
     script: |
       dotnet build -f net8.0-android
