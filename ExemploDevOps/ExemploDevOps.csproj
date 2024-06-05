@@ -66,6 +66,9 @@
       <Content Include="..\azure-pipelines-android.yml">
         <Link>azure-pipelines-android.yml</Link>
       </Content>
+      <Content Include="..\azure-pipelines-ios.yml">
+        <Link>azure-pipelines-ios.yml</Link>
+      </Content>
     </ItemGroup>
 
 </Project>
