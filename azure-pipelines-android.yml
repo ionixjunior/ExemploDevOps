@@ -14,13 +14,11 @@ variables:
   outputDirectory: '$(build.binariesDirectory)/$(buildConfiguration)'
 
 steps:
-- task: NuGetToolInstaller@1
-
 - task: CmdLine@2
-  displayName: 'Instalar workaload MAUI Android'
+  displayName: 'Instalar workaload MAUI'
   inputs:
     script: |
-      dotnet workload install maui-android
+      dotnet workload install maui
 
 - task: CmdLine@2
   displayName: 'Restaurar pacotes'
