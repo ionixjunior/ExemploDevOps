@@ -29,6 +29,7 @@ steps:
     projectName: 'buildandroid'
     extraProperties: |
       sonar.qualitygate.wait=true
+      sonar.branch.name=mainx
     
 - task: CmdLine@2
   displayName: 'Instalar workaload MAUI'
@@ -46,7 +47,7 @@ steps:
   displayName: 'Compilar Android'
   inputs:
     script: |
-      dotnet build
+      dotnet build -f net8.0-android
 
 - task: SonarQubeAnalyze@6
   inputs:
