@@ -46,7 +46,7 @@ steps:
   displayName: 'Compilar Android'
   inputs:
     script: |
-      dotnet build -f net8.0-android
+      dotnet build
 
 - task: SonarQubeAnalyze@6
   inputs:
